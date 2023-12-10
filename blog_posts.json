@@ -1,0 +1,128 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Silk Elegance",
+            "description": "Explore the luxurious world of silk fabrics and their unique characteristics.",
+            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "username": "silkmaster",
+            "comments": [
+                {
+                    "commentID": 1,
+                    "username": "cottonlover",
+                    "commentText": " lorem loremloremloremloremloremlorem  loremloremloremlorem loremloremloremlorem loremloremv"
+                },
+                {
+                    "commentID": 12,
+                    "username": "cottonlover2",
+                    "commentText": " lorem loremloremloremloremloremlorem  loremloremloremlorem loremloremloremlorem loremloremv"
+                },
+                {
+                    "commentID": 13,
+                    "username": "cottonlover3",
+                    "commentText": " lorem loremloremloremloremloremlorem  loremloremloremlorem loremloremloremlorem loremloremv"
+                },
+                {
+                    "commentID": 4,
+                    "username": "admin",
+                    "commentText": "12312"
+                }
+            ],
+            "likes": {
+                "1": {
+                    "username": "username2"
+                },
+                "2": {
+                    "username": "username3"
+                },
+                "3": {
+                    "username": "admin"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "title": "Blend Magic",
+            "description": "Unveiling the magic of fabric blends and how they combine the best of different materials.",
+            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "username": "fabricblend",
+            "comments": [],
+            "likes": [
+                {
+                    "username": "alen"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Textile Trends",
+            "description": "Stay updated on the latest textile trends and innovations in the fabric industry.",
+            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "username": "textiletrendsetter",
+            "comments": [],
+            "likes": [
+                {
+                    "username": "alen"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Denim Delight",
+            "description": "Dive into the world of denim fabrics and their timeless appeal in fashion.",
+            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "username": "denimlover",
+            "comments": [],
+            "likes": [
+                {
+                    "username": "alen"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Wool Wonders",
+            "description": "Explore the warmth and elegance of wool fabrics in various applications.",
+            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "username": "woolenthusiast",
+            "comments": [],
+            "likes": []
+        },
+        {
+            "id": 6,
+            "title": "Linen Lifestyle",
+            "description": "Embrace the breathable and eco-friendly lifestyle with linen fabrics.",
+            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "username": "linenlover",
+            "comments": [],
+            "likes": []
+        },
+        {
+            "id": 7,
+            "title": "Synthetic Wonders",
+            "description": "Discover the innovative world of synthetic fabrics and their unique properties.",
+            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "username": "syntheticwizard",
+            "comments": [],
+            "likes": []
+        },
+        {
+            "id": 8,
+            "title": "Leather Luxe",
+            "description": "Unveiling the luxurious world of leather fabrics and their timeless appeal.",
+            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "username": "leatherenthusiast",
+            "comments": [],
+            "likes": []
+        },
+        {
+            "id": 9,
+            "title": "Alenova svila",
+            "description": "svila bila lila kila vila stila krila",
+            "img": "https:\/\/www.marthastewart.com\/thmb\/bcLDYd7rZnI94jM4RcH-bmo_7Po=\/1500x0\/filters:no_upscale():max_bytes(150000):strip_icc()\/liberty-fabric-d110821-0314-fd015ef6439647b9ab4c09ee562b68c5.jpg",
+            "username": "alen",
+            "comments": [],
+            "likes": []
+        }
+    ]
+}
