@@ -39,22 +39,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <!-- You can link your CSS file here if you have one -->
+   <link rel="stylesheet" href="styleLogin.css">
 </head>
 <body>
 
 <?php include_once 'navbar.php'; ?>
 
-<div>
-    <h1>Login</h1>
-    <form method="post" action="">
+<div class="loginPage">
+    <form class="loginForm" method="post" action="">
+        <h1>Login</h1>
+        <div class="inputField">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br>
+        </div>
 
+        <div class="inputField">
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required><br>
+        </div>
 
-        <input type="submit" value="Login">
+        <input class="submitButton" type="submit" value="Login">
     </form>
 </div>
 

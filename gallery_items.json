@@ -1,50 +1,88 @@
 {
     "items": [
-      {
-        "id": 1,
-        "image": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-        "title": "Cotton Fabric",
-        "description": "High-quality cotton fabric suitable for various uses.",
-        "tags": ["cotton", "textile", "natural"],
-        "price": 15.99
-      },
-      {
-        "id": 2,
-        "image": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-        "title": "Stoff Blend",
-        "description": "Luxurious silk blend fabric with a smooth texture.",
-        "tags": ["silk", "blend", "luxury"],
-        "price": 39.99
-      },
-      {
-        "id": 3,
-        "image": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-        "title": "Cotton Blend",
-        "description": "Luxurious silk blend fabric with a smooth texture.",
-        "tags": ["silk", "blend", "luxury"],
-        "price": 49.99
-      },{
-        "id": 4,
-        "image": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-        "title": "Poliester Blend",
-        "description": "Luxurious silk blend fabric with a smooth texture.",
-        "tags": ["silk", "blend", "luxury"],
-        "price": 59.99
-      },{
-        "id": 5,
-        "image": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-        "title": "Plastic Blend",
-        "description": "Luxurious silk blend fabric with a smooth texture.",
-        "tags": ["silk", "blend", "luxury"],
-        "price": 69.99
-      },{
-        "id": 6,
-        "image": "https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-        "title": "Nylon Blend",
-        "description": "Luxurious silk blend fabric with a smooth texture.",
-        "tags": ["silk", "blend", "luxury"],
-        "price": 79.99
-      }
+        {
+            "id": 1,
+            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
+            "title": "Cotton Fabric",
+            "description": "High-quality cotton fabric suitable for various uses. High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.",
+            "tags": [
+                "cotton",
+                "textile",
+                "natural"
+            ],
+            "price": 15.99
+        },
+        {
+            "id": 2,
+            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
+            "title": "Stoff Blend",
+            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "tags": [
+                "silk",
+                "blend",
+                "luxury"
+            ],
+            "price": 39.99
+        },
+        {
+            "id": 3,
+            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
+            "title": "Cotton Blend",
+            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "tags": [
+                "silk",
+                "blend",
+                "luxury"
+            ],
+            "price": 49.99
+        },
+        {
+            "id": 4,
+            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
+            "title": "Poliester Blend",
+            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "tags": [
+                "silk",
+                "blend",
+                "luxury"
+            ],
+            "price": 59.99
+        },
+        {
+            "id": 5,
+            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
+            "title": "Plastic Blend",
+            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "tags": [
+                "silk",
+                "blend",
+                "luxury"
+            ],
+            "price": 69.99
+        },
+        {
+            "id": 6,
+            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
+            "title": "Nylon Blend",
+            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "tags": [
+                "silk",
+                "blend",
+                "luxury"
+            ],
+            "price": 79.99
+        },
+        {
+            "id": 7,
+            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
+            "title": "Nylon Blend",
+            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "tags": [
+                "silk",
+                "blend",
+                "luxury"
+            ],
+            "price": 79.99
+        }
     ]
-  }
-  
+}
