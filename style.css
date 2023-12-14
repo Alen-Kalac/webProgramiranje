@@ -6,11 +6,10 @@
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
-textarea{
+textarea {
   resize: none;
 }
 body {
-  
   background-color: lightblue;
 }
 .hero {
@@ -39,7 +38,7 @@ body {
 }
 .hero .hero-text h1 {
   margin-bottom: 10%;
-  font-size: 6vh;
+  font-size: 12vh;
 }
 .info-bg {
   background-image: url("./images/infobg.jpg");
@@ -169,7 +168,7 @@ nav ul li a:hover {
   margin-top: 5vh;
   display: flex;
 }
-.addNewItemForm{
+.addNewItemForm {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -178,22 +177,23 @@ nav ul li a:hover {
   margin: 20px;
   margin-top: calc(5vh + 20px);
 }
-.addNewItemForm .inputField{
+.addNewItemForm .inputField {
   display: flex;
   flex-direction: column;
-
-}.inputField label{
+}
+.inputField label {
   margin-bottom: 10px;
   font-size: 16px;
 }
 
-.inputField input,textarea{
-  padding: 4px ;
+.inputField input,
+textarea {
+  padding: 4px;
   font-size: 16px;
   outline-color: rgba(0, 164, 255, 1);
   margin-bottom: 10px;
 }
-.submitButton{
+.submitButton {
   width: 100%;
   font-size: 20px;
   padding: 5px;
@@ -202,10 +202,10 @@ nav ul li a:hover {
   border: 2px solid rgba(0, 164, 255, 1);
   border-radius: 5px;
 }
-.submitButton:hover{
-transition: 0.3s;
-background-color: rgba(0, 164, 255, 1);
-color: white;
+.submitButton:hover {
+  transition: 0.3s;
+  background-color: rgba(0, 164, 255, 1);
+  color: white;
 }
 .galleryPage .filters {
   padding: 0.5%;
@@ -217,19 +217,19 @@ color: white;
   position: sticky;
   top: calc(5vh + 20px);
 }
-.filters .filter{
+.filters .filter {
   border: 1px solid lightgray;
   padding: 2%;
   display: flex;
   flex-direction: column;
-
 }
-.filters .filter a, .filter p {
+.filters .filter a,
+.filter p {
   margin-bottom: 5px;
   text-decoration: none;
   color: black;
 }
-.filters .filter a:hover{
+.filters .filter a:hover {
   color: rgba(0, 164, 255, 1);
 }
 /* Style for the gallery item grid */
@@ -274,12 +274,10 @@ color: white;
   -webkit-line-clamp: 5; /* Adjust the number of lines to display */
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
-  
 }
 
 .galleryItem .tags {
   margin: 5px 0;
-  
 }
 
 .galleryItem p.price {

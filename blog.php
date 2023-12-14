@@ -21,21 +21,26 @@ function loadBlogPosts()
 }
 
 // Function to add a new blog post
-function addBlogPost($title, $description, $img, $username)
+function addBlogPost($title, $description, $imageFile, $username)
 {
     $blogData = json_decode(file_get_contents('blog_posts.json'), true);
 
     // Generate a unique ID for the new post
-    $newPostID = uniqid(); // You can customize this further if needed
+    $newPostID = uniqid();
+
+    // Save image to the 'blogImages' folder with postID as the filename
+    $imageExtension = pathinfo($imageFile['name'], PATHINFO_EXTENSION);
+    $imageFileName = "blogImages/{$newPostID}.{$imageExtension}";
+    move_uploaded_file($imageFile['tmp_name'], $imageFileName);
 
     $newPost = [
         "id" => $newPostID,
         "title" => $title,
         "description" => $description,
-        "img" => $img,
+        "img" => $imageFileName,
         "username" => $username,
-        "comments" => [], // Initialize an empty array for comments
-        "likes" => [] // Initialize an empty array for likes
+        "comments" => [],
+        "likes" => []
     ];
 
     $blogData['posts'][] = $newPost;
@@ -43,6 +48,19 @@ function addBlogPost($title, $description, $img, $username)
     file_put_contents('blog_posts.json', json_encode($blogData, JSON_PRETTY_PRINT));
 }
 
+// Check if the form for adding a new blog post is submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'add_post' && isLoggedIn()) {
+    $title = $_POST['title'];
+    $description = $_POST['description'];
+    $img = $_FILES['img'];
+    $username = getCurrentUsername();
+
+    addBlogPost($title, $description, $img, $username);
+
+    // Redirect to the same page to avoid form resubmission on page refresh
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
+}
 // Function to get a subset of blog posts based on page and limit
 function getPaginatedPosts($page, $limit)
 {
@@ -96,19 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     }
 }
 
-// Check if the form for adding a new blog post is submitted
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'add_post' && isLoggedIn()) {
-    $title = $_POST['title'];
-    $description = $_POST['description'];
-    $img = $_POST['img'];
-    $username = getCurrentUsername();
 
-    addBlogPost($title, $description, $img, $username);
-
-    // Redirect to the same page to avoid form resubmission on page refresh
-    header("Location: " . $_SERVER['PHP_SELF']);
-    exit();
-}
 // Function to check if the current user has liked a post
 function hasLiked($postID, $username)
 {
@@ -174,7 +180,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && (($_POST
 }
 
 // Function to remove a like from a post
-function removeLike($postID, $username) {
+function removeLike($postID, $username)
+{
     $blogData = json_decode(file_get_contents('blog_posts.json'), true);
 
     $postIndex = array_search($postID, array_column($blogData['posts'], 'id'));
@@ -233,42 +240,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="blogStyle.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <style>
-        img {
-            width: 200px;
-            height: 200px;
-        }
-
-        .blogPost {
-            border: 1px solid black;
-            margin: 10px;
-        }
-
-        .comments div {
-            border: 1px solid black;
-            margin: 10px 0;
-        }
-    </style>
     <?php include_once 'navbar.php'; ?>
-    <div>
-        <h1>Blog</h1>
+    <div class="blogPage">
+
 
         <?php
         // Check if the user is logged in
         if (isLoggedIn()) {
-            echo '<div>';
+            echo '<div class="newPost">';
             echo '<h2>New Blog Post</h2>';
-            echo '<form method="post" action="">';
+            echo '<form method="post" action="" enctype="multipart/form-data">';
+
+            echo '<div class="inputField">';
             echo '<label for="title">Title:</label>';
-            echo '<input type="text" id="title" name="title" required><br>';
+            echo '<input type="text" id="title" name="title" required>';
+            echo '</div>';
+            echo '<div class="inputField">';
             echo '<label for="description">Description:</label>';
-            echo '<textarea id="description" name="description" required></textarea><br>';
-            echo '<label for="img">Image URL:</label>';
-            echo '<input type="text" id="img" name="img" required><br>';
+            echo '<textarea id="description" name="description" required></textarea>';
+            echo '</div>';
+            echo '<div class="inputField">';
+            echo '<label for="img">Image:</label>';
+            echo '<input type="file" name="img" accept="image/*" required>';
+            echo '</div>';
+
             echo '<input type="hidden" name="action" value="add_post">';
             echo '<input type="submit" value="Create Post" name="submit">';
             echo '</form>';

@@ -1,23 +1,24 @@
 {
     "users": [
-        {
+        {  "id":1,
             "username": "userOne",
             "password": "userone1234",
             "role": "user"
         },
-        {
+        {  "id":2,
             "username": "admin",
             "password": "admin",
             "role": "admin"
         },
         {
-            "username": "alen",
-            "password": "alen1234",
-            "role": "user"
-        },
-        {
-            "username": "alen2",
-            "password": "alen1234",
+            "id": "657aeb6837dc6",
+            "username": "test1!",
+            "email": "test1!@live.com",
+            "password": "test1!test1!",
+            "name": "test1!",
+            "lastName": "test1!",
+            "birthDate": "1111-11-11",
+            "imagePath": "userPFP\/657aeb6837dc6.jpg",
             "role": "user"
         }
     ]

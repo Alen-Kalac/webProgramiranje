@@ -2,7 +2,8 @@
 session_start(); // Start session for user authentication
 
 // Function to check if a user exists in the JSON file
-function isUserExists($username, $password) {
+function isUserExists($username, $password)
+{
     $usersData = json_decode(file_get_contents('users.json'), true);
 
     foreach ($usersData['users'] as $user) {
@@ -21,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = isUserExists($username, $password);
 
     if ($user) {
+        $_SESSION['user_id'] = $user['id']; // Save the user ID in the session
         $_SESSION['username'] = $username;
         $_SESSION['role'] = $user['role']; // Store the user's role in the session
 
@@ -35,32 +37,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-   <link rel="stylesheet" href="styleLogin.css">
+    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<?php include_once 'navbar.php'; ?>
+    <?php include_once 'navbar.php'; ?>
 
-<div class="loginPage">
-    <form class="loginForm" method="post" action="">
-        <h1>Login</h1>
-        <div class="inputField">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br>
-        </div>
+    <div class="loginPage">
+        <form class="loginForm" method="post" action="">
+            <h1>Login</h1>
+            <div class="inputField">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+            </div>
 
-        <div class="inputField">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br>
-        </div>
-
-        <input class="submitButton" type="submit" value="Login">
-    </form>
-</div>
+            <div class="inputField">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+            </div>
+            
+            <input class="submitButton" type="submit" value="Login">
+            <p>
+                Don't have an account ? <a href="register.php">Register now</a>
+            </p>
+        </form>
+    </div>
 
 </body>
+
 </html>
