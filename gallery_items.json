@@ -2,85 +2,85 @@
     "items": [
         {
             "id": 1,
-            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
+            "image": "https://www.textilue.rs/thumbs/m/storage/products/06012183/17902_1.webp",
             "title": "Cotton Fabric",
-            "description": "High-quality cotton fabric suitable for various uses. High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.High-quality cotton fabric suitable for various uses.",
+            "description": "Experience the unparalleled softness of our high-quality cotton fabric, perfect for crafting versatile and comfortable garments. This natural textile is a staple for any creative project, providing a luxurious feel and durability that stands the test of time.",
             "tags": [
                 "cotton",
-                "textile",
-                "natural"
+                "crafting",
+                "natural-fiber"
             ],
             "price": 15.99
         },
         {
             "id": 2,
-            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-            "title": "Stoff Blend",
-            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "image": "https://www.textilue.rs/thumbs/m/storage/products/06012183/17904_1.webp",
+            "title": "Silk Blend",
+            "description": "Indulge in the opulence of our silk blend fabric, offering a sumptuous texture that elevates any design. This luxurious material combines the smoothness of silk with the durability of other fibers, creating a perfect harmony of comfort and sophistication.",
             "tags": [
                 "silk",
-                "blend",
-                "luxury"
+                "luxurious-textile",
+                "blended-fabric"
             ],
             "price": 39.99
         },
         {
             "id": 3,
-            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-            "title": "Cotton Blend",
-            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "image": "https://www.textilue.rs/thumbs/m/storage/products/05021231/6635_1.webp",
+            "title": "Premium Cotton Blend",
+            "description": "Elevate your projects with our premium cotton blend fabric, a fusion of natural fibers that offers unparalleled softness and versatility. This luxurious textile combines the best of cotton with additional elements, ensuring a sophisticated and durable material for your creative endeavors.",
             "tags": [
-                "silk",
-                "blend",
-                "luxury"
+                "cotton",
+                "luxury-blend",
+                "premium-textile"
             ],
             "price": 49.99
         },
         {
             "id": 4,
-            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-            "title": "Poliester Blend",
-            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "image": "https://www.textilue.rs/thumbs/m/storage/products/06011101/1248_1.webp",
+            "title": "Elegant Polyester Blend",
+            "description": "Immerse yourself in the elegance of our polyester blend fabric, offering a smooth and refined texture that adds a touch of sophistication to any creation. This luxurious blend combines the best features of polyester with other fibers, ensuring a stylish and durable material for your upscale projects.",
             "tags": [
-                "silk",
-                "blend",
-                "luxury"
+                "polyester",
+                "elegant-blend",
+                "refined-texture"
             ],
             "price": 59.99
         },
         {
             "id": 5,
-            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-            "title": "Plastic Blend",
-            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "image": "https://www.textilue.rs/thumbs/m/storage/products/06011101/7512_1.webp",
+            "title": "Sleek Plastic Blend",
+            "description": "Discover the modern allure of our plastic blend fabric, boasting a sleek and contemporary texture that adds a unique edge to your projects. This innovative blend marries the versatility of plastic with other fibers, ensuring a cutting-edge and durable material for your fashion-forward creations.",
             "tags": [
-                "silk",
-                "blend",
-                "luxury"
+                "plastic",
+                "modern-blend",
+                "sleek-texture"
             ],
             "price": 69.99
         },
         {
             "id": 6,
-            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-            "title": "Nylon Blend",
-            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "image": "https://www.textilue.rs/thumbs/m/storage/products/05021223/2069_1.webp",
+            "title": "Dynamic Nylon Blend",
+            "description": "Experience the dynamic versatility of our nylon blend fabric, featuring a smooth and resilient texture that adapts to any creative vision. This cutting-edge blend combines the strength of nylon with other fibers, ensuring a dynamic and durable material for your innovative projects.",
             "tags": [
-                "silk",
-                "blend",
-                "luxury"
+                "nylon",
+                "dynamic-blend",
+                "resilient-texture"
             ],
             "price": 79.99
         },
         {
             "id": 7,
-            "image": "https:\/\/m.media-amazon.com\/images\/S\/al-na-9d5791cf-3faf\/35c5aeb3-f292-4582-bf5e-8b29182eb74e.jpeg",
-            "title": "Nylon Blend",
-            "description": "Luxurious silk blend fabric with a smooth texture.",
+            "image": "https://www.textilue.rs/thumbs/m/storage/products/05021207/63_1.webp",
+            "title": "High-Performance Nylon Blend",
+            "description": "Step into the world of high-performance with our nylon blend fabric, offering a luxurious and durable texture that surpasses expectations. This advanced blend seamlessly combines the resilience of nylon with other fibers, providing a high-performance material for your most demanding projects.",
             "tags": [
-                "silk",
-                "blend",
-                "luxury"
+                "nylon",
+                "high-performance-blend",
+                "luxurious-texture"
             ],
             "price": 79.99
         }

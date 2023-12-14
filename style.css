@@ -257,7 +257,6 @@ textarea {
 /* Adjust the order and styles for the content within each gallery item */
 .galleryItem img {
   width: 100%;
-  max-height: 200px; /* Adjust as needed */
   object-fit: cover;
 }
 
@@ -282,4 +281,175 @@ textarea {
 
 .galleryItem p.price {
   font-weight: bold;
+}
+.blogPage {
+  width: 85%;
+  margin: auto;
+  margin-top: calc(5vh + 20px);
+}
+.newPost {
+  margin-bottom: 30px;
+  padding: 2.5%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+}
+.inputField {
+  display: flex;
+  flex-direction: column;
+}
+.inputField label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.inputField input,
+textarea {
+  padding: 4px;
+  font-size: 16px;
+  outline-color: rgba(0, 164, 255, 1);
+  margin-bottom: 10px;
+}
+.newPost .newPostButton {
+  padding: 10px;
+}
+.blogPost {
+  padding: 2.5%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 100px;
+  
+}
+.blogPost .top {
+  display: flex;
+  padding-bottom: 10px;
+  
+}
+.blogPost .top .left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.blogPost .top .left h2{
+    font-size: 30px;
+}
+.blogPost .top .left .description{
+    overflow: hidden;
+    flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 15; /* Adjust the number of lines to display */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.blogPost .top .img-container {
+  width: 40%;
+  height: 100%;
+  
+}
+.blogPost .top .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogPost .bottom{
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+.blogPost .bottom h3{
+    margin-bottom: 10px;
+}
+.blogPost .bottom .comment{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+   padding: 10px;
+}
+.comment .username{
+    font-weight: bold;
+    color: rgba(0, 164, 255, 1);
+}
+.addComment{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.addComment textarea{
+    border-radius: 10px;
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+}
+.addComment button{
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 10px;
+}
+.addComment button:hover{
+    transition: 0.3s;
+    color: rgba(0, 164, 255, 1);
+    border: 2px solid rgba(0, 164, 255, 1);
+}
+.blogPost .postedBy{
+    text-align: right;
+}
+
+.blogPost .likes{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.profilePage{
+  padding-top: calc(5vh + 20px);
+  min-height: 100vh;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.profileInfo{
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+}
+.profileInfo img{
+  width: 50%;
+  object-fit: cover;
+}
+.info-container{
+  width: 50%;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.info-container h2{
+  padding-bottom: 30px;
+}
+.info-container p {
+  margin-bottom: 20px;
+}
+.registerPage{
+  height: 100vh;
+  padding-top: calc(5vh + 20px);
+}
+.registerForm{
+  width: 30%;
+  min-width: 400px;
+  margin: auto;
+  background-color: rgb(238, 238, 238);
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+.registerButton{
+  padding: 10px 30px;
+  font-size: 20px;
 }

@@ -35,22 +35,26 @@ if (!$userData) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link rel="stylesheet" href="styleProfile.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <?php include_once 'navbar.php'; ?>
 
 <div class="profilePage">
-    <h1>User Profile</h1>
+    
     <div class="profileInfo">
+        <img src="<?php echo $userData['imagePath']; ?>" alt="Profile Picture">
+        <div class="info-container">
+        <h2>Profile information:</h2>
         <p><strong>User ID:</strong> <?php echo $userData['id']; ?></p>
         <p><strong>Username:</strong> <?php echo $userData['username']; ?></p>
         <p><strong>Email:</strong> <?php echo $userData['email']; ?></p>
         <p><strong>Name:</strong> <?php echo $userData['name']; ?></p>
         <p><strong>Last Name:</strong> <?php echo $userData['lastName']; ?></p>
         <p><strong>Birth Date:</strong> <?php echo $userData['birthDate']; ?></p>
-        <p><strong>Profile Picture:</strong> <img src="<?php echo $userData['imagePath']; ?>" alt="Profile Picture"></p>
+        <p><strong>Role:</strong> <?php echo $userData['role']; ?></p>
+        </div>
     </div>
 </div>
 

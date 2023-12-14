@@ -109,10 +109,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <?php include_once 'navbar.php'; ?>
 
-    <div>
-        <h1>Register</h1>
-        <div class="registerForm">
-            <form method="post" action="" onsubmit="return validatePassword()" enctype="multipart/form-data">
+    <div class="registerPage">
+        
+            <form class="registerForm" method="post" action="" onsubmit="return validatePassword()" enctype="multipart/form-data">
                 <div class="inputField">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required>
@@ -155,9 +154,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <input type="file" id="user_image" name="user_image" accept="image/*">
                 </div>
 
-                <input type="submit" value="Register">
+                <div class="button-container">
+                <input class="registerButton" type="submit" value="Register">
+                </div>
             </form>
-        </div>
+        
     </div>
 
 </body>

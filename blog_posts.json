@@ -3,34 +3,19 @@
         {
             "id": 1,
             "title": "Silk Elegance",
-            "description": "Explore the luxurious world of silk fabrics and their unique characteristics.",
+            "description": "Immerse yourself in the opulent world of silk fabrics, where luxury meets timeless beauty. Explore the unique characteristics that set silk apart, from its silky smooth texture to its inherent grace. Indulge in the sophistication that only silk can bring to your creations.",
             "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
             "username": "silkmaster",
             "comments": [
                 {
                     "commentID": 1,
-                    "username": "cottonlover",
-                    "commentText": " lorem loremloremloremloremloremlorem  loremloremloremlorem loremloremloremlorem loremloremv"
+                    "username": "fabricaficionado",
+                    "commentText": "Silk truly is a masterpiece of nature! The way it drapes and shimmers adds an unmatched elegance to any garment."
                 },
                 {
-                    "commentID": 12,
-                    "username": "cottonlover2",
-                    "commentText": " lorem loremloremloremloremloremlorem  loremloremloremlorem loremloremloremlorem loremloremv"
-                },
-                {
-                    "commentID": 13,
-                    "username": "cottonlover3",
-                    "commentText": " lorem loremloremloremloremloremlorem  loremloremloremlorem loremloremloremlorem loremloremv"
-                },
-                {
-                    "commentID": 4,
-                    "username": "admin",
-                    "commentText": "12312"
-                },
-                {
-                    "commentID": 5,
-                    "username": "admin",
-                    "commentText": "hjsdakda"
+                    "commentID": 2,
+                    "username": "textileexplorer",
+                    "commentText": "I can't get enough of silk's luxurious feel. It's like wearing a touch of pure indulgence!"
                 }
             ],
             "likes": {
@@ -48,10 +33,21 @@
         {
             "id": 2,
             "title": "Blend Magic",
-            "description": "Unveiling the magic of fabric blends and how they combine the best of different materials.",
-            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "description": "Embark on a journey into the enchanting realm of fabric blends, where magic happens as different materials come together in harmony. Unveil the secrets behind the art of blending and witness the extraordinary results that redefine the possibilities of textile creation.",
+            "img": "https://www.textilue.rs/thumbs/m/storage/products/02011310/853_1.webp",
             "username": "fabricblend",
-            "comments": [],
+            "comments": [
+                {
+                    "commentID": 1,
+                    "username": "creativeblend",
+                    "commentText": "Blending fabrics is like creating a symphony of textures. It adds depth and character to every piece!"
+                },
+                {
+                    "commentID": 2,
+                    "username": "textilemagician",
+                    "commentText": "I'm fascinated by how fabric blends can elevate the entire design. It's pure magic!"
+                }
+            ],
             "likes": [
                 {
                     "username": "alen"
@@ -61,10 +57,21 @@
         {
             "id": 3,
             "title": "Textile Trends",
-            "description": "Stay updated on the latest textile trends and innovations in the fabric industry.",
-            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "description": "Stay on the cutting edge of fashion with our exploration of the latest textile trends and innovations. From groundbreaking materials to revolutionary designs, join us in the dynamic world of fabrics and be a trendsetter in the ever-evolving landscape of fashion.",
+            "img": "https://www.textilue.rs/thumbs/m/storage/products/02040521/4674_1.webp",
             "username": "textiletrendsetter",
-            "comments": [],
+            "comments": [
+                {
+                    "commentID": 1,
+                    "username": "fashionforward",
+                    "commentText": "I'm always looking for the next big thing in textiles. Excited to stay updated on the latest trends!"
+                },
+                {
+                    "commentID": 2,
+                    "username": "stylevisionary",
+                    "commentText": "Innovation in textiles is key to pushing the boundaries of fashion. Let's embrace the future together!"
+                }
+            ],
             "likes": [
                 {
                     "username": "alen"
@@ -74,10 +81,21 @@
         {
             "id": 4,
             "title": "Denim Delight",
-            "description": "Dive into the world of denim fabrics and their timeless appeal in fashion.",
-            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "description": "Dive into the timeless allure of denim fabrics, where rugged durability meets casual chic. Explore the versatility of denim in fashion and discover why this classic fabric continues to captivate hearts around the world. Join us on a journey through the fascinating world of denim delight.",
+            "img": "https://www.textilue.rs/thumbs/m/storage/products/05052195/10504_1.webp",
             "username": "denimlover",
-            "comments": [],
+            "comments": [
+                {
+                    "commentID": 1,
+                    "username": "jeansfanatic",
+                    "commentText": "Denim is the ultimate fashion staple! It's like a canvas that tells a story with every wear."
+                },
+                {
+                    "commentID": 2,
+                    "username": "trendyindigo",
+                    "commentText": "I love how denim effortlessly combines style with comfort. It's a timeless favorite!"
+                }
+            ],
             "likes": [
                 {
                     "username": "alen"
@@ -87,46 +105,61 @@
         {
             "id": 5,
             "title": "Wool Wonders",
-            "description": "Explore the warmth and elegance of wool fabrics in various applications.",
-            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "description": "Step into the world of warmth and elegance with our exploration of wool fabrics. From cozy winter essentials to sophisticated year-round creations, wool has been a symbol of comfort and style. Join us in unraveling the wonders of wool and discover its timeless appeal in various applications.",
+            "img": "https://www.textilue.rs/thumbs/m/storage/products/06022125/4769_1.webp",
             "username": "woolenthusiast",
-            "comments": [],
+            "comments": [
+                {
+                    "commentID": 1,
+                    "username": "cozycreator",
+                    "commentText": "Wool has this magical ability to make everything cozy! I can't resist its warmth."
+                },
+                {
+                    "commentID": 2,
+                    "username": "styleandcomfort",
+                    "commentText": "There's something inherently elegant about wool. It's a must-have for any wardrobe!"
+                }
+            ],
             "likes": []
         },
         {
             "id": 6,
             "title": "Linen Lifestyle",
-            "description": "Embrace the breathable and eco-friendly lifestyle with linen fabrics.",
-            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "description": "Embrace a breathable and eco-friendly lifestyle with our ode to linen fabrics. From its airy texture to its minimal environmental impact, linen is a timeless choice for those who value comfort and sustainability. Join us in celebrating the versatility and simplicity of the linen lifestyle.",
+            "img": "https://www.textilue.rs/thumbs/m/storage/products/05052206/11487_1.webp",
             "username": "linenlover",
-            "comments": [],
+            "comments": [
+                {
+                    "commentID": 1,
+                    "username": "ecochic",
+                    "commentText": "Linen is my go-to choice for staying stylish while being mindful of our planet. It's a win-win!"
+                },
+                {
+                    "commentID": 2,
+                    "username": "breathablestyle",
+                    "commentText": "There's a certain charm in linen's simplicity. It's perfect for a laid-back yet elegant look."
+                }
+            ],
             "likes": []
         },
         {
             "id": 7,
             "title": "Synthetic Wonders",
-            "description": "Discover the innovative world of synthetic fabrics and their unique properties.",
-            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
+            "description": "Embark on a journey of discovery into the innovative world of synthetic fabrics. From advanced performance materials to futuristic designs, synthetic wonders are redefining the possibilities in the textile industry. Join us in exploring the unique properties that make synthetic fabrics truly extraordinary.",
+            "img": "https://assets.prestogroup.com/intranet/uploads/letter_head/Test%20the%20Color%20of%20Textiles%20Effectively.jpg",
             "username": "syntheticwizard",
-            "comments": [],
-            "likes": []
-        },
-        {
-            "id": 8,
-            "title": "Leather Luxe",
-            "description": "Unveiling the luxurious world of leather fabrics and their timeless appeal.",
-            "img": "https:\/\/www.aguafabrics.com\/media\/content-page-images\/_1024_image\/No0zhT40_re.jpg",
-            "username": "leatherenthusiast",
-            "comments": [],
-            "likes": []
-        },
-        {
-            "id": 9,
-            "title": "Alenova svila",
-            "description": "svila bila lila kila vila stila krila",
-            "img": "https:\/\/www.marthastewart.com\/thmb\/bcLDYd7rZnI94jM4RcH-bmo_7Po=\/1500x0\/filters:no_upscale():max_bytes(150000):strip_icc()\/liberty-fabric-d110821-0314-fd015ef6439647b9ab4c09ee562b68c5.jpg",
-            "username": "alen",
-            "comments": [],
+            "comments": [
+                {
+                    "commentID": 1,
+                    "username": "techtextiles",
+                    "commentText": "The advancements in synthetic fabrics are mind-blowing! Excited to see what the future holds."
+                },
+                {
+                    "commentID": 2,
+                    "username": "innovationenthusiast",
+                    "commentText": "Synthetic fabrics are a game-changer in fashion. They bring a whole new level of creativity!"
+                }
+            ],
             "likes": []
         }
     ]
