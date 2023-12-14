@@ -242,7 +242,7 @@ textarea {
 
 /* Style for each individual gallery item */
 .galleryItem {
-  height: 45vh;
+  min-height: 50vh;
   border: 1px solid rgba(0, 164, 255, 1);
   border-radius: 30px;
   padding: 10px;

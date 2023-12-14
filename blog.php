@@ -240,8 +240,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="blogStyle.css">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleBlog.css">
 </head>
 
 <body>
@@ -270,7 +271,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             echo '</div>';
 
             echo '<input type="hidden" name="action" value="add_post">';
-            echo '<input type="submit" value="Create Post" name="submit">';
+            echo '<input class="newPostButton" type="submit" value="Create Post" name="submit">';
             echo '</form>';
             echo '</div>';
         }
@@ -282,19 +283,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 
         foreach ($paginatedPosts as $post) {
             echo '<div class="blogPost">';
-            echo '<h2>' . $post['title'] . '</h2>';
-            echo '<p>' . $post['description'] . '</p>';
-            echo '<img src="' . $post['img'] . '" alt="' . $post['title'] . '">';
-            echo '<p>Posted by: ' . $post['username'] . '</p>';
-
-            // Add a delete button
+            // Delete button
             if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
                 echo '<form method="post" action="">';
                 echo '<input type="hidden" name="post_id" value="' . $post['id'] . '">';
-                echo '<button type="submit" name="action" value="delete_post">Delete</button>';
+                echo '<button class="deleteButton" type="submit" name="action" value="delete_post">Delete</button>';
                 echo '</form>';
             }
+
+            // Top section
+            echo '<div class="top">';
+            // Left section (title, description, likes)
+            echo '<div class="left">';
+            echo '<h2>' . $post['title'] . '</h2>';
+            echo '<p class="description">' . $post['description'] . '</p>';
             // Display likes
+            echo '<div class="likes">';
             $likesCount = count($post['likes']);
             echo '<p>Likes: ' . $likesCount . '</p>';
 
@@ -302,19 +306,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             $username = getCurrentUsername();
             $hasLiked = hasLiked($post['id'], $username);
 
-            // Display like/dislike button
+            
+            // Like button and its logic
             echo '<form method="post" action="">';
             echo '<input type="hidden" name="post_id" value="' . $post['id'] . '">';
-
             if ($hasLiked) {
                 echo '<button type="submit" name="action" value="dislike">Dislike</button>';
             } else {
                 echo '<button type="submit" name="action" value="like">Like</button>';
             }
-
             echo '</form>';
-            // Render comments
-            echo '<div>';
+            echo '</div>';
+            echo '</div>'; // Close the "left" div
+  
+            // Image container
+            echo '<div class="img-container">';
+            echo '<img src="' . $post['img'] . '" alt="' . $post['title'] . '">';
+            echo '</div>'; // Close the "img-container" div
+        
+            echo '</div>'; // Close the "top" div
+        
+            // Bottom section (comments and delete button)
+            echo '<div class="bottom">';
             echo '<h3>Comments</h3>';
 
             // Display a message if there are no comments
@@ -324,33 +337,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                 // Display comments
                 echo '<div class="comments">';
                 foreach ($post['comments'] as $comment) {
-                    echo '<div>' . $comment['username'] . ': ' . $comment['commentText'] . '</div>';
+                    echo '<div class="comment">' . '<p class="username">'. $comment['username'] . "</p>"  . "<p>" . $comment['commentText'] ."</p>" . '</div>';
                 }
                 echo '</div>';
             }
 
             // Input field for adding new comments
-            echo '<form method="post" action="">';
+            echo '<form class="addComment" method="post" action="">';
             echo '<input type="hidden" name="post_id" value="' . $post['id'] . '">';
-            echo '<label for="newComment">Leave a Comment:</label>';
-            echo '<input type="text" id="newComment" name="new_comment_text">';
+            echo '<textarea type="text" id="newComment" name="new_comment_text">'. '</textarea>';
             echo '<button type="submit" name="action" value="comment">Add Comment</button>';
             echo '</form>';
 
-            echo '</div>'; // Close the blogPost div here
-            echo '</div>'; // Move the closing div outside the loop
+            
+
+            echo '</div>'; // Close the "bottom" div
+            echo '<p class="postedBy">Posted by: ' . $post['username'] . '</p>';
+            
+            echo '</div>'; // Close the "blogPost" div
         }
         ?>
 
-        <!-- Pagination links -->
-        <?php
-        $totalPosts = count(loadBlogPosts());
-        $totalPages = ceil($totalPosts / $limit);
-
-        for ($i = 1; $i <= $totalPages; $i++) {
-            echo '<a href="?page=' . $i . '">' . $i . '</a> ';
-        }
-        ?>
     </div>
 
 </body>

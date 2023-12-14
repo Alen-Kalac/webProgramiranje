@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <!-- You can link your CSS file here if you have one -->
+    <link rel="stylesheet" href="style.css">
     <script>
         // JavaScript function to validate password and confirm password
         function validatePassword() {
